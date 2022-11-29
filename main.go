@@ -125,7 +125,7 @@ func executeCheck(_ *corev2.Event) (int, error) {
 	fmt.Println(status.ClientCount)
 
 	// Verify file age
-	fileAgeSeconds := time.Now().Sub(status.LastModified).Seconds()
+	fileAgeSeconds := time.Since(status.LastModified).Seconds()
 	if plugin.StatusFileAgeCrit > 0 && fileAgeSeconds > float64(plugin.StatusFileAgeCrit) {
 		return sensu.CheckStateCritical, &fileAgeThresholdError{fileAgeSeconds, float64(plugin.StatusFileAgeCrit), severityCritical}
 	} else if plugin.StatusFileAgeWarn > 0 && fileAgeSeconds > float64(plugin.StatusFileAgeWarn) {
