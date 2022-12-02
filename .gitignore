@@ -18,3 +18,9 @@ vendor/
 # deploy
 bonsai/
 dist/
+
+# Intellij
+.idea/
+
+# Binary
+sensu-openvpn-check
