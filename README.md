@@ -1,6 +1,3 @@
-{{- /* Ignore this text, until templating is ran via [sensu-plugin-tool](https://github.com/sensu/sensu-plugin-tool) the
-below badge links will not render */ -}}
-
 [![Sensu Bonsai Asset](https://img.shields.io/badge/Bonsai-Download%20Me-brightgreen.svg?colorB=89C967&logo=sensu)](https://bonsai.sensu.io/assets/sensu/sensu-openvpn-check)
 ![Go Test](https://github.com/sensu/sensu-openvpn-check/workflows/Go%20Test/badge.svg)
 ![goreleaser](https://github.com/sensu/sensu-openvpn-check/workflows/goreleaser/badge.svg)
